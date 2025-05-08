@@ -1,0 +1,83 @@
+/* Palette Société Générale */
+:root {
+    --red-sg: #e2001a;
+    --black-sg: #000000;
+    --white: #ffffff;
+    --grey-bg: #f5f5f5;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--grey-bg);
+    color: var(--black-sg);
+  }
+  
+  header {
+    background-color: var(--red-sg);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  
+  input[type="text"] {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.8rem;
+    background-color: var(--red-sg);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c00017;
+  }
+  
+  .prompt-box {
+    background-color: var(--white);
+    border-left: 4px solid var(--red-sg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 4px;
+  }
+  
+  .prompt-box button {
+    margin-top: 0.5rem;
+    background-color: var(--black-sg);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .usecase-desc {
+    margin: 1rem 0;
+    font-style: italic;
+    color: #333;
+  }
+  

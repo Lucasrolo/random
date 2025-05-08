@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOGPT Use Case Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SOGPT Use Case Manager</h1>
+    <p>Centralisez et utilisez facilement vos prompts IA</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="useCaseSelect">Choisissez un Use Case :</label>
+      <select id="useCaseSelect" onchange="onUseCaseChange()">
+        <option disabled selected value="">-- Sélectionner --</option>
+      </select>
+
+      <div id="useCaseDescription" class="usecase-desc"></div>
+
+      <label id="inputLabel" for="userInput">Texte spécifique à insérer :</label>
+      <input type="text" id="userInput" placeholder="Ex : Automatiser la validation KYC">
+      <button onclick="generatePrompts()">Générer les prompts</button>
+    </section>
+
+    <section id="promptsContainer" class="prompts-container"></section>
+  </main>
+
+  <footer>
+    <p>Société Générale - Usage interne</p>
+  </footer>
+
+    <hr>
+    <section>
+      <h2>Ajouter un Use Case</h2>
+      <form id="addUseCaseForm">
+        <label for="newUseCaseName">Nom du Use Case :</label>
+        <input type="text" id="newUseCaseName" required><br>
+
+        <label for="newUseCaseDescription">Description :</label>
+        <textarea id="newUseCaseDescription" required></textarea><br>
+
+        <label for="newInputLabel">Label du champ spécifique :</label>
+        <input type="text" id="newInputLabel" required><br>
+
+        <label for="newPrompts">Prompts (un par ligne) :</label>
+        <textarea id="newPrompts" required></textarea><br>
+
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
